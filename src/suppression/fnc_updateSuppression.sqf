@@ -19,7 +19,7 @@ while {alive _unit} do {
 
 		_lastSuppressed = time;
 
-		LOG_3("Unit: %1, Increased Suppression to: %2 with input unit suppression: %3",_unit,_suppression,_current);
+		// LOG_3("Unit: %1, Increased Suppression to: %2 with input unit suppression: %3",_unit,_suppression,_current);
 	};
 
 	if (_suppression > 0.0) then {
@@ -28,11 +28,11 @@ while {alive _unit} do {
 			
 			[_unit,_suppression] call FUNC(setSubSkills);
 
-			LOG_2("Unit: %1, decayed suppression to: %2",_unit,_suppression);
+			// LOG_2("Unit: %1, decayed suppression to: %2",_unit,_suppression);
 		};
 	};
 	_prior = _current;
 	sleep 0.1;
 };
 
-LOG_1("Unit: %1 died",_unit);
+// LOG_1("Unit: %1 died",_unit);
