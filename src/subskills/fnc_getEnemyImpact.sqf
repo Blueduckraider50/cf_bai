@@ -36,7 +36,7 @@ FNC_averageGroupTerrainImpact = {
 	private _impactSum = 0;
 	{
 		private _unitCachedImpact =  _x getVariable ["CF_BAI_TerrainImpact",0];
-		LOG_2("Cached Impact Unit:%1, impact is: %2",_x,_unitCachedImpact);
+		// LOG_2("Cached Impact Unit:%1, impact is: %2",_x,_unitCachedImpact);
 		_impactSum = _impactSum + _unitCachedImpact;
 	}forEach _units;
 
@@ -48,7 +48,7 @@ if !(isNull _groupLead) then {
 
 	private _terrainImpact = [_groupLead] call FNC_averageGroupTerrainImpact;
 
-	LOG_2("Best Enemy found:%1, impact is: %2",_groupLead,_terrainImpact);
+	// LOG_2("Best Enemy found:%1, impact is: %2",_groupLead,_terrainImpact);
 
 	_terrainImpact
 } else {
