@@ -78,6 +78,6 @@ if (_enemyImpact >= 0) then {
 	_combinedTerrainImpact = (0.5 * _enemyImpact) + (0.5 * _terrain_impact)
 };
 
-LOG_4("Unit: %1, TerrainImpact: %2, EnemyImpact: %3, Combined Impact: %4",_unit,_terrain_impact,_enemyImpact,_combinedTerrainImpact);
+// LOG_4("Unit: %1, TerrainImpact: %2, EnemyImpact: %3, Combined Impact: %4",_unit,_terrain_impact,_enemyImpact,_combinedTerrainImpact);
 
 [_unit, _combinedTerrainImpact] call FNC_update_unit_skills;
