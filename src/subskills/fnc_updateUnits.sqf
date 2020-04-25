@@ -7,7 +7,7 @@ sleep GVAR(sleep);
 while {true} do{
 	private _maxTerrainCount = [] call FUNC(terrainCount);
 	
-	LOG_1("Max Terrain count is: %1", _maxTerrainCount);
+	// LOG_1("Max Terrain count is: %1", _maxTerrainCount);
 
 	private _startTime = diag_tickTime;
 	{
@@ -24,7 +24,7 @@ while {true} do{
 	
 	private _endTime = diag_tickTime;
 	
-	LOG_1("Runtime:%1",_endTime-_startTime);
+	// LOG_1("Runtime:%1",_endTime-_startTime);
 	
 	private _sleepTime = 10 - (_endTime-_startTime);
 	if (_sleepTime > 0) then {
