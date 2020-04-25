@@ -15,7 +15,7 @@ while {true} do{
 	if (_sleepTime > 0) then {
 		sleep _sleepTime;
 	} else {
-		WARNING_1("Runtime Vision:%1",_endTime-_startTime);
+		//WARNING_1("Runtime Vision:%1",_endTime-_startTime);
 		_additionalTime = floor(-1 * _sleepTime);
 	};
 	
